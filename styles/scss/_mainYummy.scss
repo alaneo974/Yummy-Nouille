@@ -1,0 +1,191 @@
+/* textes */
+body {
+    font-family: $body-font;
+    font-style: normal;
+    font-weight: $body-font-weight;
+    font-size: $body-font-size;
+    line-height: $body-line-height;
+    background-color: $whiteG;
+    color: $black;
+    margin: auto;
+}
+
+h1 {
+    font-family: $header-font;
+    font-style: normal;
+    font-weight: $header-font-weight;
+    font-size: $header-font-size;
+    line-height: $header-line-height;
+    color: $black;
+    margin: 0;
+}
+
+h3, .navBar, button {
+    font-family: $title-font;
+    font-style: normal;
+    font-weight: $title-font-weight;
+    font-size: $title-font-size;
+    line-height: $title-line-height;
+    color: $black;
+}
+
+h2, h4{
+    font-family: $body-highlight-font;
+    font-weight: $body-highlight-font-weight;
+    font-size: $body-highlight-font-size;
+    line-height: $body-highlight-line-height;
+    color: $black;
+}
+
+address, p {
+    font-family: $body-font;
+    font-weight: $body-font-weight;
+    font-size: $body-font-size;
+    line-height: $body-line-height;
+}
+
+b {
+    font-weight: 600;
+}
+strong {
+    font-weight: 900;
+}
+
+/* underline red  */
+h3 {
+    text-decoration: underline $redO;
+    text-underline-offset: 0.25rem;
+    text-decoration-thickness: 0.188rem;
+}
+
+a:hover {
+    color: $redO;
+    transition: 0.3s;
+}
+
+/* section Yummy Nouilles */
+.YummyNouilles {
+    height: 31.25rem;
+    background-color: $whiteG;
+    @include flexCenter;
+
+    img {
+        height: 19rem;
+        width: 19rem;
+        margin-left: 10.25rem;
+    }
+}
+
+.essentielYummy {
+    @include flexCenter;
+    flex-direction: column;
+    text-align: left;
+}
+.yum {
+    color: var(--redO);
+}
+
+
+/* section nos adresses */
+.nosAdresses {
+    height: 31.25rem;
+    background-color: $whiteG;
+    @include flexCenter;
+    flex-direction: column;
+
+    h1 {
+        margin-bottom: 4.125rem;
+    }
+}
+
+.YummyNoddle {
+    margin: 0 6.875rem 0 9.375rem;
+}
+.LesYummyNouilles {
+    margin: 0 9.375rem 0 6.875rem;
+}
+
+.adresses {
+    display: flex;
+    flex-direction: row;
+
+    img {
+        width: 18.75rem;
+        height: 13.5rem;
+    }
+
+    h4, p, address {
+        font-style: normal;
+        margin: 0;
+    }
+}
+
+
+/* section notre savoir faire */
+.savoirFaire {
+    height: 13.5rem;
+    background-color: $whiteG;
+    @include flexCenter;
+    flex-direction: column;
+    text-align: justify;
+
+    p {
+        margin: 0 8.75rem;
+    }
+}
+
+
+/* section retrouvez-nous sur les réseaux sociaux */
+.postsReseaux {
+    height: 43.75rem;
+    background-color: $whiteG;
+    @include flexCenter;
+    flex-direction: column;
+}
+.posts {
+    display: grid;
+    grid-template-columns: 15.5rem 15.5rem 15.5rem;
+    grid-template-rows: 15.5rem 15.5rem;
+    gap: 4.313rem;
+}
+
+
+
+/* menu */
+.menu {
+    width: 100%;
+    background-color: $whiteG;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        margin-top: 0;
+    }
+}
+.menuTitre {
+    margin: 3.125rem 0 1.25rem 10rem;
+}
+
+/* carte */
+.carte {
+    background-color: $white;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+    img {
+        margin-top: 4.188rem;
+    }
+
+    p {
+        margin-top: 1.625rem;
+    }
+
+    h4 {
+        margin-top: 3.25;
+    }
+}

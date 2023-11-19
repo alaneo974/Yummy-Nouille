@@ -1,0 +1,278 @@
+@charset "UTF-8";
+/* Colors */
+/* Text configuration */
+@media (max-width: 768px) {
+  /* Mobile Variables */
+}
+/* header nav */
+.navBar {
+  height: 6.625rem;
+  background-color: #F3F3F3;
+  display: flex;
+  align-items: center;
+}
+.navBar img {
+  margin: 0 2rem 0 3rem;
+  height: 4.5rem;
+  width: 4.5rem;
+}
+.navBar a {
+  color: #000000;
+  text-decoration: none;
+  margin: 0.3rem;
+}
+.navBar .actualPage {
+  -webkit-text-decoration: underline #D2483D;
+          text-decoration: underline #D2483D;
+  text-underline-offset: 0.25rem;
+  text-decoration-thickness: 0.188rem;
+}
+
+/* click & collect */
+.clickCollect {
+  width: 13.5rem;
+  height: 3.5rem;
+  background-color: #000000;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.clickCollect:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  transition: 0.3s;
+}
+
+/* CTA-Banner */
+.CTA-Banner {
+  height: 13.5rem;
+  background-color: #D2483D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.CTA-Banner .clickCollect {
+  margin-bottom: 1.375rem;
+}
+
+.commanderTexte {
+  color: #FFFFFF;
+}
+
+/* section contactez nous */
+.contactezNous {
+  height: 13.5rem;
+  background-color: #F3F3F3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contactezNous p {
+  margin: 0;
+}
+
+/* footer */
+footer {
+  height: 13.5rem;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer img {
+  margin: 1.563rem;
+}
+
+/* textes */
+body {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  background-color: #F3F3F3;
+  color: #000000;
+  margin: auto;
+}
+
+h1 {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4.5rem;
+  line-height: 5.375rem;
+  color: #000000;
+  margin: 0;
+}
+
+h3, .navBar, button {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  color: #000000;
+}
+
+h2, h4 {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: #000000;
+}
+
+address, p {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+b {
+  font-weight: 600;
+}
+
+strong {
+  font-weight: 900;
+}
+
+/* underline red  */
+h3 {
+  -webkit-text-decoration: underline #D2483D;
+          text-decoration: underline #D2483D;
+  text-underline-offset: 0.25rem;
+  text-decoration-thickness: 0.188rem;
+}
+
+a:hover {
+  color: #D2483D;
+  transition: 0.3s;
+}
+
+/* section Yummy Nouilles */
+.YummyNouilles {
+  height: 31.25rem;
+  background-color: #F3F3F3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.YummyNouilles img {
+  height: 19rem;
+  width: 19rem;
+  margin-left: 10.25rem;
+}
+
+.essentielYummy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+.yum {
+  color: var(--redO);
+}
+
+/* section nos adresses */
+.nosAdresses {
+  height: 31.25rem;
+  background-color: #F3F3F3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.nosAdresses h1 {
+  margin-bottom: 4.125rem;
+}
+
+.YummyNoddle {
+  margin: 0 6.875rem 0 9.375rem;
+}
+
+.LesYummyNouilles {
+  margin: 0 9.375rem 0 6.875rem;
+}
+
+.adresses {
+  display: flex;
+  flex-direction: row;
+}
+.adresses img {
+  width: 18.75rem;
+  height: 13.5rem;
+}
+.adresses h4, .adresses p, .adresses address {
+  font-style: normal;
+  margin: 0;
+}
+
+/* section notre savoir faire */
+.savoirFaire {
+  height: 13.5rem;
+  background-color: #F3F3F3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: justify;
+}
+.savoirFaire p {
+  margin: 0 8.75rem;
+}
+
+/* section retrouvez-nous sur les réseaux sociaux */
+.postsReseaux {
+  height: 43.75rem;
+  background-color: #F3F3F3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: 15.5rem 15.5rem 15.5rem;
+  grid-template-rows: 15.5rem 15.5rem;
+  gap: 4.313rem;
+}
+
+/* menu */
+.menu {
+  width: 100%;
+  background-color: #F3F3F3;
+  display: flex;
+  flex-direction: column;
+}
+.menu h2 {
+  margin-top: 0;
+}
+
+.menuTitre {
+  margin: 3.125rem 0 1.25rem 10rem;
+}
+
+/* carte */
+.carte {
+  background-color: #FFFFFF;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.carte img {
+  margin-top: 4.188rem;
+}
+.carte p {
+  margin-top: 1.625rem;
+}
+.carte h4 {
+  margin-top: 3.25;
+}/*# sourceMappingURL=stylesYummy.css.map */
