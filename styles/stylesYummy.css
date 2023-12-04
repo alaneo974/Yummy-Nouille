@@ -6,15 +6,14 @@
 }
 /* header nav */
 .navBar {
-  height: 6.625rem;
+  height: 10vw;
   background-color: #F3F3F3;
   display: flex;
   align-items: center;
 }
 .navBar img {
   margin: 0 2rem 0 3rem;
-  height: 4.5rem;
-  width: 4.5rem;
+  height: 60%;
 }
 .navBar a {
   color: #000000;
@@ -30,8 +29,8 @@
 
 /* click & collect */
 .clickCollect {
-  width: 13.5rem;
-  height: 3.5rem;
+  width: 14vw;
+  height: 5vw;
   background-color: #000000;
   color: #FFFFFF;
   cursor: pointer;
@@ -43,7 +42,7 @@
 
 /* CTA-Banner */
 .CTA-Banner {
-  height: 13.5rem;
+  height: 15vw;
   background-color: #D2483D;
   display: flex;
   justify-content: center;
@@ -60,7 +59,7 @@
 
 /* section contactez nous */
 .contactezNous {
-  height: 13.5rem;
+  height: 15vw;
   background-color: #F3F3F3;
   display: flex;
   justify-content: center;
@@ -68,12 +67,12 @@
   flex-direction: column;
 }
 .contactezNous p {
-  margin: 0;
+  margin-top: 0;
 }
 
 /* footer */
 footer {
-  height: 13.5rem;
+  height: 10vw;
   background-color: #000000;
   display: flex;
   justify-content: center;
@@ -152,15 +151,14 @@ a:hover {
 
 /* section Yummy Nouilles */
 .YummyNouilles {
-  height: 31.25rem;
+  height: 40vw;
   background-color: #F3F3F3;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .YummyNouilles img {
-  height: 19rem;
-  width: 19rem;
+  height: 60%;
   margin-left: 10.25rem;
 }
 
@@ -178,7 +176,7 @@ a:hover {
 
 /* section nos adresses */
 .nosAdresses {
-  height: 31.25rem;
+  height: 35vw;
   background-color: #F3F3F3;
   display: flex;
   justify-content: center;
@@ -202,8 +200,7 @@ a:hover {
   flex-direction: row;
 }
 .adresses img {
-  width: 18.75rem;
-  height: 13.5rem;
+  height: 73%;
 }
 .adresses h4, .adresses p, .adresses address {
   font-style: normal;
@@ -212,7 +209,7 @@ a:hover {
 
 /* section notre savoir faire */
 .savoirFaire {
-  height: 13.5rem;
+  height: 20vw;
   background-color: #F3F3F3;
   display: flex;
   justify-content: center;
@@ -226,7 +223,7 @@ a:hover {
 
 /* section retrouvez-nous sur les réseaux sociaux */
 .postsReseaux {
-  height: 43.75rem;
+  height: 50vw;
   background-color: #F3F3F3;
   display: flex;
   justify-content: center;

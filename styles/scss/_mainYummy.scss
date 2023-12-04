@@ -65,13 +65,12 @@ a:hover {
 
 /* section Yummy Nouilles */
 .YummyNouilles {
-    height: 31.25rem;
+    height: 40vw;
     background-color: $whiteG;
     @include flexCenter;
 
     img {
-        height: 19rem;
-        width: 19rem;
+        height: 60%;
         margin-left: 10.25rem;
     }
 }
@@ -88,7 +87,7 @@ a:hover {
 
 /* section nos adresses */
 .nosAdresses {
-    height: 31.25rem;
+    height: 35vw;
     background-color: $whiteG;
     @include flexCenter;
     flex-direction: column;
@@ -110,8 +109,7 @@ a:hover {
     flex-direction: row;
 
     img {
-        width: 18.75rem;
-        height: 13.5rem;
+        height: 73%;
     }
 
     h4, p, address {
@@ -123,7 +121,7 @@ a:hover {
 
 /* section notre savoir faire */
 .savoirFaire {
-    height: 13.5rem;
+    height: 20vw;
     background-color: $whiteG;
     @include flexCenter;
     flex-direction: column;
@@ -137,7 +135,7 @@ a:hover {
 
 /* section retrouvez-nous sur les réseaux sociaux */
 .postsReseaux {
-    height: 43.75rem;
+    height: 50vw;
     background-color: $whiteG;
     @include flexCenter;
     flex-direction: column;
