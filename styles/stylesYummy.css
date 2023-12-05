@@ -1,9 +1,6 @@
 @charset "UTF-8";
 /* Colors */
 /* Text configuration */
-@media (max-width: 768px) {
-  /* Mobile Variables */
-}
 /* header nav */
 .navBar {
   height: auto;
@@ -18,16 +15,29 @@
   width: 5%;
   margin-right: 1.5rem;
 }
-.navBar a {
-  color: #000000;
-  text-decoration: none;
-  margin-left: 0.5rem;
-}
 .navBar .actualPage {
   -webkit-text-decoration: underline #D2483D;
           text-decoration: underline #D2483D;
   text-underline-offset: 0.25rem;
   text-decoration-thickness: 0.188rem;
+}
+.navBar a {
+  color: #000000;
+  text-decoration: none;
+  margin-left: 0.5rem;
+}
+@media (max-width: 768px) {
+  .navBar {
+    justify-content: center;
+    margin: 1rem 0;
+  }
+  .navBar img {
+    width: 7%;
+    margin-right: 0;
+  }
+  .navBar a {
+    margin-left: 1rem;
+  }
 }
 
 /* click & collect */
@@ -58,6 +68,16 @@
 .CTA-Banner .clickCollect {
   margin-bottom: 1.375rem;
 }
+@media (max-width: 768px) {
+  .CTA-Banner .clickCollect {
+    width: 40vw;
+  }
+}
+@media (max-width: 768px) {
+  .CTA-Banner {
+    margin: 3rem 0;
+  }
+}
 
 .commanderTexte {
   color: #FFFFFF;
@@ -76,6 +96,12 @@
 }
 .contactezNous p {
   margin: 0;
+}
+@media (max-width: 768px) {
+  .contactezNous p {
+    margin: 0 5rem;
+    text-align: justify;
+  }
 }
 
 /* footer */
@@ -103,6 +129,13 @@ body {
   color: #000000;
   margin: auto;
 }
+@media (max-width: 768px) {
+  body {
+    /* Mobile Variables */
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
 
 h1 {
   font-family: "Bebas Neue";
@@ -113,6 +146,13 @@ h1 {
   color: #000000;
   margin: 0;
 }
+@media (max-width: 768px) {
+  h1 {
+    /* Mobile Variables */
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+}
 
 h3, .navBar, button {
   font-family: "Bebas Neue";
@@ -122,6 +162,13 @@ h3, .navBar, button {
   line-height: 1.75rem;
   color: #000000;
 }
+@media (max-width: 768px) {
+  h3, .navBar, button {
+    /* Mobile Variables */
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
 
 h2, h4 {
   font-family: "Montserrat";
@@ -130,12 +177,26 @@ h2, h4 {
   line-height: 1.5rem;
   color: #000000;
 }
+@media (max-width: 768px) {
+  h2, h4 {
+    /* Mobile Variables */
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
 
-address, p {
+address, p, button {
   font-family: "Montserrat";
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 1.5rem;
+}
+@media (max-width: 768px) {
+  address, p, button {
+    /* Mobile Variables */
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
 }
 
 b {
@@ -174,11 +235,29 @@ a:hover {
   width: 24%;
   margin-left: 10.25rem;
 }
+@media (max-width: 768px) {
+  .YummyNouilles {
+    margin: 3rem 0;
+  }
+  .YummyNouilles img {
+    display: none;
+  }
+}
 
 .essentielYummy {
   display: flex;
   flex-direction: column;
   justify-content: start;
+}
+@media (max-width: 768px) {
+  .essentielYummy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .essentielYummy button {
+    width: 100%;
+  }
 }
 
 .yum {
@@ -199,17 +278,46 @@ a:hover {
 .nosAdresses h1 {
   margin: 2rem 0;
 }
+@media (max-width: 768px) {
+  .nosAdresses {
+    text-align: center;
+  }
+  .nosAdresses h1 {
+    margin: 0;
+  }
+}
 
 .YummyNoddle {
   margin-right: 7rem;
+}
+@media (max-width: 768px) {
+  .YummyNoddle {
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .YuNoodleMy {
+    margin: 1rem 0;
+  }
 }
 
 .LesYummyNouilles {
   margin-left: 7rem;
 }
+@media (max-width: 768px) {
+  .LesYummyNouilles {
+    margin: 1rem 0;
+  }
+}
 
 .adresses {
   display: flex;
+}
+@media (max-width: 768px) {
+  .adresses {
+    flex-direction: column;
+  }
 }
 .adresses img {
   width: 100%;
@@ -255,6 +363,12 @@ a:hover {
   grid-template-rows: 15.5rem 15.5rem;
   gap: 4.313rem;
 }
+@media (max-width: 768px) {
+  .posts {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 /* menu */
 .menu {
@@ -264,12 +378,20 @@ a:hover {
   display: flex;
   flex-direction: column;
 }
+.menu .h1 {
+  margin: 3.125rem 0 1.25rem 10rem;
+}
 .menu h2 {
   margin-top: 0;
 }
-
-.menuTitre {
-  margin: 3.125rem 0 1.25rem 10rem;
+@media (max-width: 768px) {
+  .menu h1 {
+    text-align: center;
+    margin: 0 0 3rem 0;
+  }
+  .menu h2 {
+    display: none;
+  }
 }
 
 /* carte */
@@ -290,4 +412,13 @@ a:hover {
 }
 .carte h4 {
   margin-top: 3.25;
+}
+@media (max-width: 768px) {
+  .carte img {
+    width: 40%;
+    margin-top: 0.8rem;
+  }
+  .carte p {
+    display: none;
+  }
 }/*# sourceMappingURL=stylesYummy.css.map */

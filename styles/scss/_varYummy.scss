@@ -25,15 +25,16 @@
  $header-line-height: 5.375rem;
  $title-line-height: 1.75rem;
 
- @media (max-width: 768px) {
-      /* Mobile Variables */
-      $body-font-size: 1rem;
-      $body-highlight-font-size: 1rem;
-      $header-font-size: 2.5rem;
-      $title-font-size: 1.25rem;
-  
-      $body-line-height: 1.25rem;
-      $body-highlight-line-height: 1.25rem;
-      $header-line-height: 3rem;
-      $title-line-height: 1.5rem;
-  }
+$mobile-screen: 768px;
+//  mobile text
+ $mobile-body-font-size: 1rem;
+ $mobile-body-line-height: 1.25rem;
+
+ $mobile-header-font-size: 2.5rem;
+ $mobile-header-line-height: 3rem;
+
+ $mobile-title-font-size: 1.25rem;
+ $mobile-title-line-height: 1.5rem;
+
+ $mobile-body-highlight-font-size: 1rem;
+ $mobile-body-highlight-line-height: 1.25rem;
