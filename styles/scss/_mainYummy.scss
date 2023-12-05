@@ -65,51 +65,58 @@ a:hover {
 
 /* section Yummy Nouilles */
 .YummyNouilles {
-    height: 40vw;
+    height: auto;
+    width: 100%;
+    margin: 10rem 0;
     background-color: $whiteG;
     @include flexCenter;
 
     img {
-        height: 60%;
+        height: auto;
+        width: 24%;
         margin-left: 10.25rem;
     }
 }
 
 .essentielYummy {
-    @include flexCenter;
+    display: flex;
     flex-direction: column;
-    text-align: left;
+    justify-content: start;
 }
 .yum {
-    color: var(--redO);
+    color: $redO;
 }
 
 
 /* section nos adresses */
 .nosAdresses {
-    height: 35vw;
+    height: auto;
+    width: 100%;
+    margin: 2rem 0;
     background-color: $whiteG;
     @include flexCenter;
     flex-direction: column;
 
     h1 {
-        margin-bottom: 4.125rem;
+        margin: 2rem 0;
     }
 }
 
 .YummyNoddle {
-    margin: 0 6.875rem 0 9.375rem;
+        margin-right: 7rem;
 }
+
 .LesYummyNouilles {
-    margin: 0 9.375rem 0 6.875rem;
+        margin-left: 7rem;
 }
 
 .adresses {
     display: flex;
-    flex-direction: row;
 
     img {
-        height: 73%;
+        width: 100%;
+        max-width: 304px;
+        height: auto;
     }
 
     h4, p, address {
@@ -121,7 +128,9 @@ a:hover {
 
 /* section notre savoir faire */
 .savoirFaire {
-    height: 20vw;
+    height: auto;
+    width: 100%;
+    margin: 1rem 0;
     background-color: $whiteG;
     @include flexCenter;
     flex-direction: column;
@@ -135,7 +144,9 @@ a:hover {
 
 /* section retrouvez-nous sur les réseaux sociaux */
 .postsReseaux {
-    height: 50vw;
+    height: auto;
+    width: 100%;
+    margin: 2rem 0;
     background-color: $whiteG;
     @include flexCenter;
     flex-direction: column;
@@ -152,6 +163,7 @@ a:hover {
 /* menu */
 .menu {
     width: 100%;
+    height: auto;
     background-color: $whiteG;
     display: flex;
     flex-direction: column;
@@ -167,8 +179,7 @@ a:hover {
 /* carte */
 .carte {
     background-color: $white;
-    margin-left: 10rem;
-    margin-right: 10rem;
+    margin: 0 10rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;

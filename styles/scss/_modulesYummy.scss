@@ -1,19 +1,22 @@
 /* header nav */
 .navBar {
-    height: 10vw;
+    height: auto;
+    width: 100%;
+    margin: 1rem 1rem 3rem 1rem;
     background-color: $whiteG;
     display: flex;
     align-items: center;
 
     img {
-        margin: 0 2rem 0 3rem;
-        height: 60%;
+        height: auto;
+        width: 5%;
+        margin-right: 1.5rem;
     }
 
     a {
         color: $black;
         text-decoration: none;
-        margin:  0.3rem;
+        margin-left: 0.5rem;
     }
 
     .actualPage {
@@ -27,7 +30,8 @@
 /* click & collect */
 .clickCollect {
     width: 14vw;
-    height: 5vw;
+    height: auto;
+    padding: 0.7rem;
     background-color: $black;
     color: $white;
     cursor: pointer;
@@ -41,7 +45,9 @@
 
 /* CTA-Banner */
 .CTA-Banner {
-    height: 15vw;
+    height: auto;
+    width: 100%;
+    padding: 1.5rem 0;
     background-color: $redO;
     @include flexCenter;
     flex-direction: column;
@@ -58,19 +64,23 @@
 
 /* section contactez nous */
 .contactezNous {
-    height: 15vw;
+    height: auto;
+    width: 100%;
+    margin: 4rem 0;
     background-color: $whiteG;
     @include flexCenter;
     flex-direction: column;
 
     p {
-        margin-top: 0;
+        margin: 0;
     }
 }
 
 /* footer */
 footer {
-    height: 10vw;
+    height: auto;
+    width: 100%;
+    padding: 2rem 0;
     background-color: $black;
     @include flexCenter;
 
