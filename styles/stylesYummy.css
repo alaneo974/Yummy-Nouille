@@ -5,7 +5,7 @@
 .navBar {
   height: auto;
   width: 100%;
-  margin: 1rem 1rem 3rem 1rem;
+  margin: 1rem 0 3rem 3rem;
   background-color: #F3F3F3;
   display: flex;
   align-items: center;
@@ -65,22 +65,19 @@
   align-items: center;
   flex-direction: column;
 }
+.CTA-Banner h2 {
+  color: #FFFFFF;
+}
 .CTA-Banner .clickCollect {
   margin-bottom: 1.375rem;
 }
 @media (max-width: 768px) {
+  .CTA-Banner {
+    margin-top: 3rem;
+  }
   .CTA-Banner .clickCollect {
     width: 40vw;
   }
-}
-@media (max-width: 768px) {
-  .CTA-Banner {
-    margin: 3rem 0;
-  }
-}
-
-.commanderTexte {
-  color: #FFFFFF;
 }
 
 /* section contactez nous */
@@ -97,10 +94,10 @@
 .contactezNous p {
   margin: 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .contactezNous p {
     margin: 0 5rem;
-    text-align: justify;
+    text-align: center;
   }
 }
 
@@ -128,10 +125,10 @@ body {
   background-color: #F3F3F3;
   color: #000000;
   margin: auto;
+  overflow-x: hidden;
 }
 @media (max-width: 768px) {
   body {
-    /* Mobile Variables */
     font-size: 1rem;
     line-height: 1.25rem;
   }
@@ -148,7 +145,6 @@ h1 {
 }
 @media (max-width: 768px) {
   h1 {
-    /* Mobile Variables */
     font-size: 2.5rem;
     line-height: 3rem;
   }
@@ -164,7 +160,6 @@ h3, .navBar, button {
 }
 @media (max-width: 768px) {
   h3, .navBar, button {
-    /* Mobile Variables */
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
@@ -179,7 +174,6 @@ h2, h4 {
 }
 @media (max-width: 768px) {
   h2, h4 {
-    /* Mobile Variables */
     font-size: 1rem;
     line-height: 1.25rem;
   }
@@ -193,7 +187,6 @@ address, p, button {
 }
 @media (max-width: 768px) {
   address, p, button {
-    /* Mobile Variables */
     font-size: 1rem;
     line-height: 1.25rem;
   }
@@ -207,7 +200,10 @@ strong {
   font-weight: 900;
 }
 
-/* underline red  */
+.yum {
+  color: #D2483D;
+}
+
 h3 {
   -webkit-text-decoration: underline #D2483D;
           text-decoration: underline #D2483D;
@@ -235,7 +231,7 @@ a:hover {
   width: 24%;
   margin-left: 10.25rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .YummyNouilles {
     margin: 3rem 0;
   }
@@ -249,7 +245,7 @@ a:hover {
   flex-direction: column;
   justify-content: start;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .essentielYummy {
     display: flex;
     justify-content: center;
@@ -258,10 +254,6 @@ a:hover {
   .essentielYummy button {
     width: 100%;
   }
-}
-
-.yum {
-  color: #D2483D;
 }
 
 /* section nos adresses */
@@ -278,7 +270,7 @@ a:hover {
 .nosAdresses h1 {
   margin: 2rem 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .nosAdresses {
     text-align: center;
   }
@@ -290,34 +282,24 @@ a:hover {
 .YummyNoddle {
   margin-right: 7rem;
 }
-@media (max-width: 768px) {
-  .YummyNoddle {
-    margin: 1rem 0;
-  }
-}
-
-@media (max-width: 768px) {
-  .YuNoodleMy {
-    margin: 1rem 0;
-  }
-}
 
 .LesYummyNouilles {
   margin-left: 7rem;
 }
-@media (max-width: 768px) {
+
+@media (max-width: 1200px) {
+  .YummyNoddle {
+    margin: 1rem 0;
+  }
+  .YuNoodleMy {
+    margin: 1rem 0;
+  }
   .LesYummyNouilles {
     margin: 1rem 0;
   }
 }
-
 .adresses {
   display: flex;
-}
-@media (max-width: 768px) {
-  .adresses {
-    flex-direction: column;
-  }
 }
 .adresses img {
   width: 100%;
@@ -327,6 +309,11 @@ a:hover {
 .adresses h4, .adresses p, .adresses address {
   font-style: normal;
   margin: 0;
+}
+@media (max-width: 1200px) {
+  .adresses {
+    flex-direction: column;
+  }
 }
 
 /* section notre savoir faire */
@@ -342,7 +329,7 @@ a:hover {
   text-align: justify;
 }
 .savoirFaire p {
-  margin: 0 8.75rem;
+  margin: 0 5rem;
 }
 
 /* section retrouvez-nous sur les réseaux sociaux */
@@ -363,6 +350,12 @@ a:hover {
   grid-template-rows: 15.5rem 15.5rem;
   gap: 4.313rem;
 }
+@media (max-width: 1024px) {
+  .posts {
+    grid-template-columns: 15.5rem 15.5rem;
+    grid-template-rows: 15.5rem 15.5rem 15.5rem;
+  }
+}
 @media (max-width: 768px) {
   .posts {
     display: flex;
@@ -378,16 +371,19 @@ a:hover {
   display: flex;
   flex-direction: column;
 }
-.menu .h1 {
-  margin: 3.125rem 0 1.25rem 10rem;
+.menu h1 {
+  margin: 3rem 0 0 10rem;
 }
 .menu h2 {
-  margin-top: 0;
+  margin: 0 0 2rem 10rem;
 }
 @media (max-width: 768px) {
+  .menu {
+    background-color: #FFFFFF;
+  }
   .menu h1 {
     text-align: center;
-    margin: 0 0 3rem 0;
+    margin: 3rem 0;
   }
   .menu h2 {
     display: none;
@@ -414,9 +410,11 @@ a:hover {
   margin-top: 3.25;
 }
 @media (max-width: 768px) {
+  .carte {
+    margin-bottom: 2rem;
+  }
   .carte img {
-    width: 40%;
-    margin-top: 0.8rem;
+    display: none;
   }
   .carte p {
     display: none;

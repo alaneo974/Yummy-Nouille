@@ -8,9 +8,9 @@ body {
     background-color: $whiteG;
     color: $black;
     margin: auto;
+    overflow-x: hidden;
 
-    @media (max-width: 768px) {
-        /* Mobile Variables */
+    @media (max-width: $mobile-screen) {
         font-size: $mobile-body-font-size;
         line-height: $mobile-body-line-height;
     }
@@ -25,8 +25,7 @@ h1 {
     color: $black;
     margin: 0;
 
-    @media (max-width: 768px) {
-        /* Mobile Variables */
+    @media (max-width: $mobile-screen) {
         font-size:  $mobile-header-font-size;
         line-height: $mobile-header-line-height;
     }
@@ -40,8 +39,7 @@ h3, .navBar, button {
     line-height: $title-line-height;
     color: $black;
 
-    @media (max-width: 768px) {
-        /* Mobile Variables */
+    @media (max-width: $mobile-screen) {
         font-size: $mobile-title-font-size;
         line-height: $mobile-title-line-height;
     }
@@ -54,8 +52,7 @@ h2, h4{
     line-height: $body-highlight-line-height;
     color: $black;
 
-    @media (max-width: 768px) {
-        /* Mobile Variables */
+    @media (max-width: $mobile-screen) {
         font-size: $mobile-body-highlight-font-size;
         line-height: $mobile-body-highlight-line-height;
     }
@@ -67,13 +64,13 @@ address, p, button {
     font-size: $body-font-size;
     line-height: $body-line-height;
 
-    @media (max-width: 768px) {
-        /* Mobile Variables */
+    @media (max-width: $mobile-screen) {
         font-size: $mobile-body-font-size;
         line-height: $mobile-body-line-height;
     }
 }
 
+// font weight, color 
 b {
     font-weight: 600;
 }
@@ -81,7 +78,12 @@ strong {
     font-weight: 900;
 }
 
-/* underline red  */
+.yum {
+    color: $redO;
+}
+
+
+// links and actual page
 h3 {
     text-decoration: underline $redO;
     text-underline-offset: 0.25rem;
@@ -107,7 +109,7 @@ a:hover {
         margin-left: 10.25rem;
     }
 
-    @media (max-width: $mobile-screen) {
+    @media (max-width: $tablet-screen) {
         margin: 3rem 0;
 
         img {
@@ -121,7 +123,7 @@ a:hover {
     flex-direction: column;
     justify-content: start;
 
-    @media (max-width: $mobile-screen) {
+    @media (max-width: $tablet-screen) {
         @include flexCenter;
 
         button {
@@ -129,10 +131,6 @@ a:hover {
         }
     }
 }
-.yum {
-    color: $redO;
-}
-
 
 
 /* section nos adresses */
@@ -148,7 +146,7 @@ a:hover {
         margin: 2rem 0;
     }
 
-    @media (max-width: $mobile-screen) {
+    @media (max-width: $laptop-screen) {
         text-align: center;
 
         h1 {
@@ -157,34 +155,24 @@ a:hover {
     }
 }
 
-.YummyNoddle {
-        margin-right: 7rem;
-
-        @media (max-width: $mobile-screen) {
-            margin: 1rem 0;
+.YummyNoddle {margin-right: 7rem;}
+.LesYummyNouilles {margin-left: 7rem;}
+@media (max-width: $laptop-screen) {
+    .YummyNoddle {
+        margin: 1rem 0;
         }
-}
-
-.YuNoodleMy {
-    @media (max-width: $mobile-screen) {
+    .YuNoodleMy {
+        margin: 1rem 0;
+        }
+    .LesYummyNouilles {
         margin: 1rem 0;
     }
 }
 
-.LesYummyNouilles {
-        margin-left: 7rem;
 
-        @media (max-width: $mobile-screen) {
-            margin: 1rem 0;
-        }
-}
 
 .adresses {
     display: flex;
-
-    @media (max-width: $mobile-screen) {
-        flex-direction: column;
-    }
 
     img {
         width: 100%;
@@ -195,6 +183,10 @@ a:hover {
     h4, p, address {
         font-style: normal;
         margin: 0;
+    }
+
+    @media (max-width: $laptop-screen) {
+        flex-direction: column;
     }
 }
 
@@ -210,7 +202,7 @@ a:hover {
     text-align: justify;
 
     p {
-        margin: 0 8.75rem;
+        margin: 0 5rem;
     }
 }
 
@@ -230,10 +222,13 @@ a:hover {
     grid-template-rows: 15.5rem 15.5rem;
     gap: 4.313rem;
 
+    @media (max-width: $tablet-screen) {
+        grid-template-columns: 15.5rem 15.5rem;
+        grid-template-rows: 15.5rem 15.5rem 15.5rem;
+    }
     @media (max-width: $mobile-screen) {
         display: flex;
         flex-direction: column;
-        
     }
 }
 
@@ -247,18 +242,20 @@ a:hover {
     display: flex;
     flex-direction: column;
 
-    .h1 {
-        margin: 3.125rem 0 1.25rem 10rem;
+    h1 {
+        margin: 3rem 0 0 10rem;
     }
 
     h2 {
-        margin-top: 0;
+        margin: 0 0 2rem 10rem;
     }
 
     @media (max-width: $mobile-screen) {
+        background-color: $white;
+
         h1 {
             text-align: center;
-            margin: 0 0 3rem 0;
+            margin: 3rem 0;
         }
         
         h2 {
@@ -291,9 +288,10 @@ a:hover {
     }
 
     @media (max-width: $mobile-screen) {
+        margin-bottom: 2rem;
+
         img {
-            width: 40%;
-            margin-top: 0.8rem;
+            display: none;
         }
         p {
             display: none;
